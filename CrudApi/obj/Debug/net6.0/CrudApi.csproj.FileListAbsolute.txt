@@ -77,3 +77,4 @@ C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net6.0\pt-BR\Microsoft.Data
 C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net6.0\ru\Microsoft.Data.SqlClient.resources.dll
 C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net6.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net6.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net6.0\CrudApi.sourcelink.json
