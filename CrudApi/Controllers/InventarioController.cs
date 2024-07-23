@@ -11,13 +11,23 @@ namespace CrudApi.Controllers
     [ApiController]
     public class InventarioController : ControllerBase
     {
-        private string connectionString = "Data Source=DESKTOP-EG9BK65;Initial Catalog=ComidasRapidas;Integrated Security=True;TrustServerCertificate=True";
+        private static string? ConexionBd()
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(AppContext.BaseDirectory)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+            IConfiguration configuration = builder.Build();
+            string? connectionString = configuration.GetConnectionString("Conexion");
+
+            return connectionString;
+        }
 
         // GET: api/<InventarioController>
         [HttpGet]
         public List<Inventario> Get()
         {
-            using(var connection = new SqlConnection(connectionString))
+            using(var connection = new SqlConnection(ConexionBd()))
             {
                 var sql = "Select * from Inventario";
                 List<Inventario> list = connection.Query<Inventario>(sql).ToList();
@@ -30,7 +40,7 @@ namespace CrudApi.Controllers
         [HttpGet("{id}")]
         public List<Inventario> Get(string id)
         {
-            using (var connection = new SqlConnection(connectionString))
+            using (var connection = new SqlConnection(ConexionBd()))
             {
                 var sql = "Select * from Inventario where IdProducto = " + id;
                 List<Inventario> list = connection.Query<Inventario>(sql).ToList();
@@ -44,7 +54,7 @@ namespace CrudApi.Controllers
         public IActionResult Post(Inventario model)
         {
             int result = 0;
-            using(var connection = new SqlConnection(connectionString))
+            using(var connection = new SqlConnection(ConexionBd()))
             {
                 var sql = "Insert into Inventario Values(@IdProducto,@NombreProducto,@Cantidad,@Categoria,@Descuento)";
                 result = connection.Execute(sql, model);
@@ -58,7 +68,7 @@ namespace CrudApi.Controllers
         public IActionResult Put(string id, Inventario model)
         {
             int result = 0;
-            using (var connection = new SqlConnection(connectionString))
+            using (var connection = new SqlConnection(ConexionBd()))
             {
                 var sql = "Update Inventario set IdProducto=@IdProducto,NombreProducto=@NombreProducto,Cantidad=@Cantidad,Categoria=@Categoria,Descuento=@Descuento" +
                     " where IdProducto = " + id;
@@ -73,7 +83,7 @@ namespace CrudApi.Controllers
         public IActionResult Delete(string id)
         {
             int result = 0;
-            using(var connection = new SqlConnection(connectionString))
+            using(var connection = new SqlConnection(ConexionBd()))
             {
                 var sql = "Delete from Inventario where IdProducto = " + id;
                 result = connection.Execute(sql);
