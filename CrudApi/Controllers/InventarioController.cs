@@ -13,17 +13,6 @@ namespace CrudApi.Controllers
     public class InventarioController : ControllerBase
     {
         private readonly ConexionBd conexion = new ConexionBd();
-        //private static string? ConexionBd()
-        //{
-        //    var builder = new ConfigurationBuilder()
-        //        .SetBasePath(AppContext.BaseDirectory)
-        //        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
-
-        //    IConfiguration configuration = builder.Build();
-        //    string? connectionString = configuration.GetConnectionString("Conexion");
-
-        //    return connectionString;
-        //}
 
         // GET: api/<InventarioController>
         [HttpGet]
