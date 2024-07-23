@@ -1,5 +1,6 @@
-﻿using CrudApi.Models;
-using Dapper;
+﻿using Dapper;
+using CrudApi.Models;
+using CrudApi.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 
@@ -11,23 +12,24 @@ namespace CrudApi.Controllers
     [ApiController]
     public class InventarioController : ControllerBase
     {
-        private static string? ConexionBd()
-        {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(AppContext.BaseDirectory)
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+        private readonly ConexionBd conexion = new ConexionBd();
+        //private static string? ConexionBd()
+        //{
+        //    var builder = new ConfigurationBuilder()
+        //        .SetBasePath(AppContext.BaseDirectory)
+        //        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-            IConfiguration configuration = builder.Build();
-            string? connectionString = configuration.GetConnectionString("Conexion");
+        //    IConfiguration configuration = builder.Build();
+        //    string? connectionString = configuration.GetConnectionString("Conexion");
 
-            return connectionString;
-        }
+        //    return connectionString;
+        //}
 
         // GET: api/<InventarioController>
         [HttpGet]
         public List<Inventario> Get()
         {
-            using(var connection = new SqlConnection(ConexionBd()))
+            using(var connection = new SqlConnection(conexion.Conexion()))
             {
                 var sql = "Select * from Inventario";
                 List<Inventario> list = connection.Query<Inventario>(sql).ToList();
@@ -40,7 +42,7 @@ namespace CrudApi.Controllers
         [HttpGet("{id}")]
         public List<Inventario> Get(string id)
         {
-            using (var connection = new SqlConnection(ConexionBd()))
+            using (var connection = new SqlConnection(conexion.Conexion()))
             {
                 var sql = "Select * from Inventario where IdProducto = " + id;
                 List<Inventario> list = connection.Query<Inventario>(sql).ToList();
@@ -54,7 +56,7 @@ namespace CrudApi.Controllers
         public IActionResult Post(Inventario model)
         {
             int result = 0;
-            using(var connection = new SqlConnection(ConexionBd()))
+            using (var connection = new SqlConnection(conexion.Conexion()))
             {
                 var sql = "Insert into Inventario Values(@IdProducto,@NombreProducto,@Cantidad,@Categoria,@Descuento)";
                 result = connection.Execute(sql, model);
@@ -68,7 +70,7 @@ namespace CrudApi.Controllers
         public IActionResult Put(string id, Inventario model)
         {
             int result = 0;
-            using (var connection = new SqlConnection(ConexionBd()))
+            using (var connection = new SqlConnection(conexion.Conexion()))
             {
                 var sql = "Update Inventario set IdProducto=@IdProducto,NombreProducto=@NombreProducto,Cantidad=@Cantidad,Categoria=@Categoria,Descuento=@Descuento" +
                     " where IdProducto = " + id;
@@ -83,7 +85,7 @@ namespace CrudApi.Controllers
         public IActionResult Delete(string id)
         {
             int result = 0;
-            using(var connection = new SqlConnection(ConexionBd()))
+            using (var connection = new SqlConnection(conexion.Conexion()))
             {
                 var sql = "Delete from Inventario where IdProducto = " + id;
                 result = connection.Execute(sql);
