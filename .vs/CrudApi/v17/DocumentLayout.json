@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{FEAB049A-E2E0-490C-9CD4-A80440A3CDF8}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7940DA8F-7F40-4C5F-9D9B-3CDDCD2F79B6}|Models\\Models.csproj|C:\\Users\\JHON\\source\\repos\\CrudApi\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7940DA8F-7F40-4C5F-9D9B-3CDDCD2F79B6}|Models\\Models.csproj|solutionrelative:models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17E5E0A-ABF0-466F-A13D-6C64B50E97D2}|BaseDatos\\BaseDatos.csproj|C:\\Users\\JHON\\source\\repos\\CrudApi\\basedatos\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D17E5E0A-ABF0-466F-A13D-6C64B50E97D2}|BaseDatos\\BaseDatos.csproj|solutionrelative:basedatos\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FEAB049A-E2E0-490C-9CD4-A80440A3CDF8}|CrudApi\\CrudApi.csproj|c:\\users\\jhon\\source\\repos\\crudapi\\crudapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FEAB049A-E2E0-490C-9CD4-A80440A3CDF8}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEAB049A-E2E0-490C-9CD4-A80440A3CDF8}|CrudApi\\CrudApi.csproj|c:\\users\\jhon\\source\\repos\\crudapi\\crudapi\\context\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEAB049A-E2E0-490C-9CD4-A80440A3CDF8}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\context\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FEAB049A-E2E0-490C-9CD4-A80440A3CDF8}|CrudApi\\CrudApi.csproj|c:\\users\\jhon\\source\\repos\\crudapi\\crudapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEAB049A-E2E0-490C-9CD4-A80440A3CDF8}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEAB049A-E2E0-490C-9CD4-A80440A3CDF8}|CrudApi\\CrudApi.csproj|c:\\users\\jhon\\source\\repos\\crudapi\\crudapi\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEAB049A-E2E0-490C-9CD4-A80440A3CDF8}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,31 +78,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\Program.cs",
-              "RelativeDocumentMoniker": "CrudApi\\Program.cs",
-              "ToolTip": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\Program.cs",
-              "RelativeToolTip": "CrudApi\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Inventario.cs",
+              "DocumentMoniker": "C:\\Users\\JHON\\source\\repos\\CrudApi\\Models\\Inventario.cs",
+              "RelativeDocumentMoniker": "Models\\Inventario.cs",
+              "ToolTip": "C:\\Users\\JHON\\source\\repos\\CrudApi\\Models\\Inventario.cs",
+              "RelativeToolTip": "Models\\Inventario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T18:47:19.392Z"
+              "WhenOpened": "2024-08-01T17:57:17.529Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ConexionBd.cs",
-              "DocumentMoniker": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\Context\\ConexionBd.cs",
-              "RelativeDocumentMoniker": "CrudApi\\Context\\ConexionBd.cs",
-              "ToolTip": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\Context\\ConexionBd.cs",
-              "RelativeToolTip": "CrudApi\\Context\\ConexionBd.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "DocumentMoniker": "C:\\Users\\JHON\\source\\repos\\CrudApi\\BaseDatos\\ConexionBd.cs",
+              "RelativeDocumentMoniker": "BaseDatos\\ConexionBd.cs",
+              "ToolTip": "C:\\Users\\JHON\\source\\repos\\CrudApi\\BaseDatos\\ConexionBd.cs",
+              "RelativeToolTip": "BaseDatos\\ConexionBd.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T18:42:03.176Z"
+              "WhenOpened": "2024-08-01T17:53:18.209Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\Program.cs",
+              "RelativeDocumentMoniker": "CrudApi\\Program.cs",
+              "ToolTip": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\Program.cs",
+              "RelativeToolTip": "CrudApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T18:47:19.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\appsettings.json",
               "RelativeDocumentMoniker": "CrudApi\\appsettings.json",
@@ -110,7 +125,8 @@
               "RelativeToolTip": "CrudApi\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-12T16:32:08.486Z"
+              "WhenOpened": "2024-07-12T16:32:08.486Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -120,22 +136,10 @@
               "RelativeDocumentMoniker": "CrudApi\\Controllers\\InventarioController.cs",
               "ToolTip": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\Controllers\\InventarioController.cs",
               "RelativeToolTip": "CrudApi\\Controllers\\InventarioController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAUwBsAAAAJAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAxwBAAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-07-04T21:59:04.457Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Inventario.cs",
-              "DocumentMoniker": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\Models\\Inventario.cs",
-              "RelativeDocumentMoniker": "CrudApi\\Models\\Inventario.cs",
-              "ToolTip": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\Models\\Inventario.cs",
-              "RelativeToolTip": "CrudApi\\Models\\Inventario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-07-04T21:56:59.757Z"
             }
           ]
         }

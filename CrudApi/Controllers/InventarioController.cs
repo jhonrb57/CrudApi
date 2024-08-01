@@ -1,6 +1,6 @@
 ﻿using Dapper;
-using CrudApi.Models;
-using CrudApi.Context;
+using Models;
+using BaseDatos;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 
@@ -12,7 +12,7 @@ namespace CrudApi.Controllers
     [ApiController]
     public class InventarioController : ControllerBase
     {
-        private readonly ConexionBd conexion = new ConexionBd();
+        private readonly ConexionBd conexion = new();
 
         // GET: api/<InventarioController>
         [HttpGet]
