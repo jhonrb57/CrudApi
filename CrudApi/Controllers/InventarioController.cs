@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Models;
 using BaseDatos;
+using System.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 
@@ -20,8 +21,7 @@ namespace CrudApi.Controllers
         {
             using(var connection = new SqlConnection(conexion.Conexion()))
             {
-                var sql = "Select * from Inventario";
-                List<Inventario> list = connection.Query<Inventario>(sql).ToList();
+                List<Inventario> list = connection.Query<Inventario>("pp_listar", commandType: CommandType.StoredProcedure).ToList();
 
                 return list;
             }
@@ -29,26 +29,32 @@ namespace CrudApi.Controllers
 
         // GET api/<InventarioController>/5
         [HttpGet("{id}")]
-        public List<Inventario> Get(string id)
+        public Inventario Get(string id)
         {
             using (var connection = new SqlConnection(conexion.Conexion()))
             {
-                var sql = "Select * from Inventario where IdProducto = " + id;
-                List<Inventario> list = connection.Query<Inventario>(sql).ToList();
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("idProducto", id);
+                Inventario inventario = connection.QueryFirstOrDefault<Inventario>("pp_obtener", parameters, commandType: CommandType.StoredProcedure);
 
-                return list;
+                return inventario;
             }
         }
 
         // POST api/<InventarioController>
         [HttpPost]
-        public IActionResult Post(Inventario model)
+        public IActionResult Post(Inventario inventario)
         {
             int result = 0;
             using (var connection = new SqlConnection(conexion.Conexion()))
             {
-                var sql = "Insert into Inventario Values(@IdProducto,@NombreProducto,@Cantidad,@Categoria,@Descuento)";
-                result = connection.Execute(sql, model);
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@idProducto",inventario.IdProducto);
+                parameters.Add("@nombreProducto", inventario.NombreProducto);
+                parameters.Add("@cantidad", inventario.Cantidad);
+                parameters.Add("@categoria", inventario.Categoria);
+                parameters.Add("@descuento", inventario.Descuento);
+                result = connection.Execute("pp_registrar", parameters, commandType: CommandType.StoredProcedure);
 
                 return Ok(result);
             }
@@ -56,14 +62,18 @@ namespace CrudApi.Controllers
 
         // PUT api/<InventarioController>/5
         [HttpPut("{id}")]
-        public IActionResult Put(string id, Inventario model)
+        public IActionResult Put(string id, Inventario inventario)
         {
             int result = 0;
             using (var connection = new SqlConnection(conexion.Conexion()))
             {
-                var sql = "Update Inventario set IdProducto=@IdProducto,NombreProducto=@NombreProducto,Cantidad=@Cantidad,Categoria=@Categoria,Descuento=@Descuento" +
-                    " where IdProducto = " + id;
-                result = connection.Execute(sql, model);
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@idProducto", inventario.IdProducto);
+                parameters.Add("@nombreProducto", inventario.NombreProducto);
+                parameters.Add("@cantidad", inventario.Cantidad);
+                parameters.Add("@categoria", inventario.Categoria);
+                parameters.Add("@descuento", inventario.Descuento);
+                result = connection.Execute("pp_modificar", parameters, commandType:CommandType.StoredProcedure);
 
                 return Ok(result);
             }
@@ -76,8 +86,9 @@ namespace CrudApi.Controllers
             int result = 0;
             using (var connection = new SqlConnection(conexion.Conexion()))
             {
-                var sql = "Delete from Inventario where IdProducto = " + id;
-                result = connection.Execute(sql);
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("idProducto", id);
+                result = connection.Execute("pp_eliminar", parameters, commandType:CommandType.StoredProcedure);
 
                 return Ok(result);
             }
