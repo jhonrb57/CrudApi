@@ -30,7 +30,6 @@ C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net8.0\System.IdentityModel
 C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net8.0\System.Runtime.Caching.dll
 C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
 C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
 C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll

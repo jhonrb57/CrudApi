@@ -68,7 +68,7 @@ namespace CrudApi.Controllers
             using (var connection = new SqlConnection(conexion.Conexion()))
             {
                 DynamicParameters parameters = new DynamicParameters();
-                parameters.Add("@idProducto", inventario.IdProducto);
+                parameters.Add("@idProducto", id);
                 parameters.Add("@nombreProducto", inventario.NombreProducto);
                 parameters.Add("@cantidad", inventario.Cantidad);
                 parameters.Add("@categoria", inventario.Categoria);

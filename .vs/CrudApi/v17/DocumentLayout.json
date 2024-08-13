@@ -26,12 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -82,8 +78,7 @@
               "RelativeToolTip": "BaseDatos\\ConexionBd.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T17:53:18.209Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T17:53:18.209Z"
             },
             {
               "$type": "Document",
@@ -107,8 +102,7 @@
               "RelativeToolTip": "CrudApi\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-12T16:32:08.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T16:32:08.486Z"
             },
             {
               "$type": "Document",
@@ -116,9 +110,9 @@
               "Title": "InventarioController.cs",
               "DocumentMoniker": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\Controllers\\InventarioController.cs",
               "RelativeDocumentMoniker": "CrudApi\\Controllers\\InventarioController.cs",
-              "ToolTip": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\Controllers\\InventarioController.cs",
-              "RelativeToolTip": "CrudApi\\Controllers\\InventarioController.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAQwE8AAAAJAAAA",
+              "ToolTip": "C:\\Users\\JHON\\source\\repos\\CrudApi\\CrudApi\\Controllers\\InventarioController.cs*",
+              "RelativeToolTip": "CrudApi\\Controllers\\InventarioController.cs*",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAiwEYAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-07-04T21:59:04.457Z",
               "EditorCaption": ""
