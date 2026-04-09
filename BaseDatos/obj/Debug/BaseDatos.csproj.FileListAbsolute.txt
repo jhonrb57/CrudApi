@@ -18,9 +18,9 @@ C:\Users\JHON\source\repos\CrudApi\BaseDatos\bin\Debug\System.Runtime.CompilerSe
 C:\Users\JHON\source\repos\CrudApi\BaseDatos\bin\Debug\System.Text.Encodings.Web.dll
 C:\Users\JHON\source\repos\CrudApi\BaseDatos\bin\Debug\System.Text.Json.dll
 C:\Users\JHON\source\repos\CrudApi\BaseDatos\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\JHON\source\repos\CrudApi\BaseDatos\bin\Debug\System.ValueTuple.dll
 C:\Users\JHON\source\repos\CrudApi\BaseDatos\obj\Debug\BaseDatos.csproj.AssemblyReference.cache
 C:\Users\JHON\source\repos\CrudApi\BaseDatos\obj\Debug\BaseDatos.csproj.CoreCompileInputs.cache
 C:\Users\JHON\source\repos\CrudApi\BaseDatos\obj\Debug\BaseDatos.csproj.Up2Date
 C:\Users\JHON\source\repos\CrudApi\BaseDatos\obj\Debug\BaseDatos.dll
 C:\Users\JHON\source\repos\CrudApi\BaseDatos\obj\Debug\BaseDatos.pdb
+C:\Users\JHON\source\repos\CrudApi\BaseDatos\bin\Debug\System.IO.Pipelines.dll

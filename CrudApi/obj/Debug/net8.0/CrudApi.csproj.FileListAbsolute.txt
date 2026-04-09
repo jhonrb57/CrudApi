@@ -62,11 +62,6 @@ C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\CrudApi.MvcApplicati
 C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\CrudApi.sourcelink.json
 C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\staticwebassets\msbuild.CrudApi.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\staticwebassets\msbuild.build.CrudApi.props
-C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CrudApi.props
-C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CrudApi.props
-C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\scopedcss\bundle\CrudApi.styles.css
 C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\CrudApi.csproj.Up2Date
 C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\CrudApi.dll
@@ -74,3 +69,12 @@ C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\refint\CrudApi.dll
 C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\CrudApi.pdb
 C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\CrudApi.genruntimeconfig.cache
 C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\ref\CrudApi.dll
+C:\Users\JHON\source\repos\CrudApi\CrudApi\bin\Debug\net8.0\CrudApi.staticwebassets.endpoints.json
+C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\JHON\source\repos\CrudApi\CrudApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
